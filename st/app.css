@@ -1,8 +1,6 @@
 html {
-	background-image: -webkit-linear-gradient(bottom, #F4E2C9 20%, #F4D7C9 100%);
-	background-image: -ms-linear-gradient(bottom, #F4E2C9 20%, #F4D7C9 100%);
-	background-image: linear-gradient(to bottom, #F4E2C9 20%, #F4D7C9 100%);
-}
+	background: #cecece;
+	}
 
 html, body {
 	margin: 0;
@@ -31,7 +29,7 @@ ul {
 	list-style: none;
 }
 ul li{
-	width: 50px;
+	width: 40px;
 	display: inline-block
 }
 
@@ -48,11 +46,13 @@ ul li{
 
 
 .sortable-ghost {
-	opacity: .2;
+	opacity: .2; 
+	border-radius: 10px;
 }
 
 #foo .sortable-drag {
-	background: #daf4ff;
+	background: #fff;
+	border-radius: 10px;
 }
 
 
@@ -81,15 +81,18 @@ img {
 			display: inline-block;
 			padding: 20px 10px 20px 10px;
 		text-align: center;
-		border: 1px solid #000}
+		border: 1px solid #000;
+		border-radius: 10px;}
 
 	.block__list_words li {
 		background-color: #fff;
 		padding: 10px 40px;
+		border-radius: 10px;
 	}
 		.block__list_words .sortable-ghost {
 			opacity: 0.4;
-			background-color: #F4E2C9;
+			background-color: #000;
+			border-radius: 10px;
 		}
 
 		.block__list_words li:first-letter {
@@ -111,14 +114,36 @@ img {
 			margin: 8px 20px 10px 0;
 			padding: 5px 10px;
 			min-width: 10px;
-			background-color: #5F9EDF;
+			background-color: #fff;
 			text-align: center;
+			border-radius: 10px;
+			border: 1px solid #EBEBEB;
+			-webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
 		}
 			.block__list_tags li:first-child:first-letter {
 				text-transform: uppercase;
 			}
+h5{
+	color: #2D2D2D;
+	font-size: 14px;
+	font-weight: 900;
+	margin: 10px;
+	padding: 0;
+}
+.cenario{
+	background: #A258E4;
+	height: 4px;
+	border-radius: 10px;
+	width: 20px;
+	margin: 0 auto;
+	display: block;
+}
+.capcena{
+	font-size: 12px;
+	color: #A2A2A2;
 
-
+}
 
 #editable {}
 	#editable li {
@@ -153,7 +178,7 @@ img {
 		margin: 10px 0 0;
 		transition: opacity .1s ease;
 		cursor: pointer;
-		background: #5F9EDF;
+		background: #fff;
 		padding: 10px 0;
 		font-size: 20px;
 	}
@@ -166,9 +191,16 @@ img {
 	}
 
 .drag-handle {
-	margin-right: 10px;
-	font: bold 20px Sans-Serif;
-	color: #5F9EDF;
+	color: #fff;
+	margin: 8px 20px 10px 0;
+	padding: 5px 10px;
+	min-width: 10px;
+	background-color: #000;
+	text-align: center;
+	border-radius: 10px !important;
+	border: 1px solid #EBEBEB;
+	-webkit-box-shadow: 0 18px 8px 0 rgba(0,0,0,0.06);
+	box-shadow: 0 18px 8px 0 rgba(0,0,0,0.06);
 	display: inline-block;
 	cursor: move;
 	cursor: -webkit-grabbing;  /* overrides 'move' */
